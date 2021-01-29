@@ -1,0 +1,2 @@
+debian/bin/RatCoind usr/bin
+src/RatCoind usr/lib/RatCoin
