@@ -32,7 +32,7 @@ BLOCK %<br>
 750,001 - Max Supply 5%<br>
 <br>
 Explorer – http://explorer.ratcoin.network/<br>
-                - http://45.124.55.143/<br>
+                - http://112.213.39.98/<br>
 Website – https://ratcoin.network/<br>
 Wallets - https://ratcoin.network/ratcoin-rat-wallets/<br>
 Staking Pools - https://ratcoin.network/staking-pools/<br>
@@ -46,7 +46,7 @@ Facebook - https://www.facebook.com/ratcoinrat/<br>
 YouTube - https://www.youtube.com/channel/UCqe62xEEgJ5nPMFxfChTvDw/<br>
 Discord - https://discord.com/invite/6M27VCJ<br>
 Reddit - https://www.reddit.com/user/RatcoinTK<br>
-Github - https://github.com/freakcoderz/RatCoin<br>
+Github - https://github.com/ArcaneCrypto/RatCoin-2.0<br>
 <br>
 EXCHANGES<br>
 <br>
