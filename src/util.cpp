@@ -985,10 +985,10 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\RatCoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\RatCoin
-    // Mac: ~/Library/Application Support/RatCoin
-    // Unix: ~/.RatCoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\RatCoin2.0
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\RatCoin2.0
+    // Mac: ~/Library/Application Support/RatCoin2.0
+    // Unix: ~/.RatCoin2.0
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "RatCoin2.0";
