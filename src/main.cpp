@@ -1137,7 +1137,7 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
 
     // netcoin POW and POS blocks each separately retarget to 2 minutes,
     // giving 1 minute overall average block target time.
-	if (nBestHeight <= 51){	    
+	if (nBestHeight < 51){	    
 		nTargetSpacing = 2 * 60;
 	}else{
         	nTargetSpacing = 3 * 60;
