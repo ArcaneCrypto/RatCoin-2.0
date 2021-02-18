@@ -51,6 +51,7 @@ int space(){
 	}else{
         	nTargetSpacing = 3 * 60;
 	}
+	return nTargetSpacing;
 }
 
 static const int64_t nMaxAdjustUp = 25;
