@@ -43,12 +43,13 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
+unsigned int nTargetSpacing = 0;
 // target spacing issue
 int main(){
 	if (nBestHeight <= 51){	    
-		unsigned int nTargetSpacing = 2 * 60;
+		nTargetSpacing = 2 * 60;
 	else{
-        	unsigned int nTargetSpacing = 3 * 60;
+        	nTargetSpacing = 3 * 60;
 	}
 }
 
