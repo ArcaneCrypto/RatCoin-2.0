@@ -43,7 +43,7 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // "standard" scrypt target limit
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nTargetSpacing = 3 * 60;
+unsigned int nTargetSpacing = 2 * 60;
 static const int64_t nMaxAdjustUp = 25;
 static const int64_t nMaxAdjustDown = 50;
 static const int64_t nAdjustAmplitude = 25;
@@ -1137,6 +1137,11 @@ unsigned int GetNextTargetRequiredV1(const CBlockIndex* pindexLast, bool fProofO
 
     // netcoin POW and POS blocks each separately retarget to 2 minutes,
     // giving 1 minute overall average block target time.
+	if (nBestHeight < 51){	    
+		nTargetSpacing = 2 * 60;
+	}else{
+        	nTargetSpacing = 3 * 60;
+	}
     int64_t retargetTimespan = nTargetSpacing * 2;
     int64_t lowerLimit = retargetTimespan * (100 - nMaxAdjustUp) / 100;
     int64_t upperLimit = retargetTimespan * (100 + nMaxAdjustDown) / 100;
