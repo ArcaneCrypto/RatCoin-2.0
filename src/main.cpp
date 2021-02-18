@@ -45,7 +45,7 @@ CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
 // target spacing issue
 int main(){
-	if (nHeight <= 51){	    
+	if (nBestHeight <= 51){	    
 		unsigned int nTargetSpacing = 2 * 60;
 	else{
         	unsigned int nTargetSpacing = 3 * 60;
