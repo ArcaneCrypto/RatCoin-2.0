@@ -48,7 +48,7 @@ unsigned int nTargetSpacing = 0;
 int main(){
 	if (nBestHeight <= 51){	    
 		nTargetSpacing = 2 * 60;
-	else{
+	}else{
         	nTargetSpacing = 3 * 60;
 	}
 }
